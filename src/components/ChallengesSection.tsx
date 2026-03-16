@@ -4,25 +4,25 @@ import { BookOpen, Lightbulb, Users, Rocket, PresentationIcon, Globe } from "luc
 const challenges = [
   {
     num: "01",
-    title: "Self-Awareness & Leadership",
+    title: "Introduction",
     icon: Users,
     description: "Understanding our personal strengths, values, and leadership styles to effectively drive change in our communities.",
   },
   {
     num: "02",
-    title: "Problem Identification",
+    title: "Discover Africa",
     icon: BookOpen,
     description: "Identifying and analyzing the climate change challenges facing small-scale farmers in Rwanda's Eastern Province through research and fieldwork.",
   },
   {
     num: "03",
-    title: "Ideation & Brainstorming",
+    title: "HELP-LAB",
     icon: Lightbulb,
     description: "Generating innovative solutions through collaborative brainstorming, focusing on agroforestry and drought-resistant farming approaches.",
   },
   {
     num: "04",
-    title: "Prototyping & Testing",
+    title: "Launch your mission",
     icon: Rocket,
     description: "Developing and testing our prototype solution for climate-smart agriculture, gathering feedback from local farming communities.",
   },
