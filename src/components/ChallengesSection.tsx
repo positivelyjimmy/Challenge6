@@ -14,14 +14,14 @@ const challenges = [
     title: "Discover Africa",
     icon: BookOpen,
     description: "Identifying and analyzing the climate change challenges facing small-scale farmers in Rwanda's Eastern Province through research and fieldwork.",
-    link: null,
+    link: "https://youtu.be/Ah5v6H0_QCY?si=OMioNdKanaLDWWiK",
   },
   {
     num: "03",
     title: "HELP-LAB",
     icon: Lightbulb,
     description: "Generating innovative solutions through collaborative brainstorming, focusing on agroforestry and drought-resistant farming approaches.",
-    link: null,
+    link: "https://youtu.be/pdKLkCTIrmE?si=0E_G9FMSj1eyjEGi",
   },
   {
     num: "04",
@@ -78,13 +78,11 @@ const ChallengesSection = () => (
             onClick={() => c.link && window.open(c.link, "_blank")}
             className={`bg-card border border-border rounded-2xl p-6 group hover:border-primary/40 transition-all hover:glow-gold relative ${c.link ? "cursor-pointer" : "cursor-default"}`}
           >
-            {/* YouTube badge */}
             {c.link && (
               <span className="absolute top-3 right-3 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                 ▶ Watch
               </span>
             )}
-
             <div className="flex items-center gap-4 mb-4">
               <span className="text-3xl font-black text-gradient-gold font-['Playfair_Display']">{c.num}</span>
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
