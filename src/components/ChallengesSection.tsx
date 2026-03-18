@@ -7,36 +7,42 @@ const challenges = [
     title: "Introduction",
     icon: Users,
     description: "Understanding our personal strengths, values, and leadership styles to effectively drive change in our communities.",
+    link: "https://youtu.be/f9qmPMHh-7Y?si=hZ8cnjFMWQe4u8mx",
   },
   {
     num: "02",
     title: "Discover Africa",
     icon: BookOpen,
     description: "Identifying and analyzing the climate change challenges facing small-scale farmers in Rwanda's Eastern Province through research and fieldwork.",
+    link: null,
   },
   {
     num: "03",
     title: "HELP-LAB",
     icon: Lightbulb,
     description: "Generating innovative solutions through collaborative brainstorming, focusing on agroforestry and drought-resistant farming approaches.",
+    link: null,
   },
   {
     num: "04",
     title: "Hunting for Treasure",
     icon: Rocket,
     description: "Developing and testing our prototype solution for climate-smart agriculture, gathering feedback from local farming communities.",
+    link: null,
   },
   {
     num: "05",
     title: "Launch your mission",
     icon: PresentationIcon,
     description: "Presenting our solution to stakeholders, refining our pitch, and communicating the impact of our climate-smart agricultural approach.",
+    link: null,
   },
   {
     num: "06",
     title: "Digital Print",
     icon: Globe,
     description: "Creating a digital presence to showcase our E-Lab journey, documenting our process, and sharing our vision for sustainable farming in Rwanda.",
+    link: null,
   },
 ];
 
@@ -69,8 +75,16 @@ const ChallengesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="bg-card border border-border rounded-2xl p-6 group hover:border-primary/40 transition-all hover:glow-gold"
+            onClick={() => c.link && window.open(c.link, "_blank")}
+            className={`bg-card border border-border rounded-2xl p-6 group hover:border-primary/40 transition-all hover:glow-gold relative ${c.link ? "cursor-pointer" : "cursor-default"}`}
           >
+            {/* YouTube badge */}
+            {c.link && (
+              <span className="absolute top-3 right-3 text-xs bg-red-600 text-white px-2 py-0.5 rounded-full font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                ▶ Watch
+              </span>
+            )}
+
             <div className="flex items-center gap-4 mb-4">
               <span className="text-3xl font-black text-gradient-gold font-['Playfair_Display']">{c.num}</span>
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
