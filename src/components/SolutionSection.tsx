@@ -20,7 +20,7 @@ const SolutionSection = () => (
     {/* Background image */}
     <div
       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/solution-bg.jpeg')" }}    />
+        style={{ backgroundImage: "url('/Interviewpic.jpeg')" }}    />
     {/* Dark overlay to keep text readable */}
     <div className="absolute inset-0 bg-black/70" />
 

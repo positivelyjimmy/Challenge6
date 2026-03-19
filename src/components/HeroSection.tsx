@@ -3,6 +3,11 @@ import { Sparkles } from "lucide-react";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+     <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/solution-bg.jpeg')" }}    />
+    {/* Dark overlay to keep text readable */}
+    <div className="absolute inset-0 bg-black/70" />
     {/* Decorative elements */}
     <div className="absolute top-20 left-10 w-2 h-2 rounded-full bg-primary sparkle" />
     <div className="absolute top-40 right-20 w-1.5 h-1.5 rounded-full bg-primary sparkle" style={{ animationDelay: "1s" }} />
